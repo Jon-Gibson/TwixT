@@ -24,7 +24,6 @@ public class GUI extends Frame {
 			for (float x=0; x<BOARD_SIZE; x++) {
 				Shape circle = new Ellipse2D.Float(X_BORDER_SIZE+x*SPACING, Y_BORDER_SIZE+y*SPACING, CIRCLE_SIZE, CIRCLE_SIZE);
 				int index = (int)(x+y*BOARD_SIZE);
-				System.out.println(index);
 				circles[index] = circle;		
 				ga.draw(circles[index]);
 				ga.fill(circles[index]);
